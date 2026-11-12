@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "limitlessheist:block/hacker_terminal"
+    },
+    "facing=east": {
+      "model": "limitlessheist:block/hacker_terminal"
+    },
+    "facing=south": {
+      "model": "limitlessheist:block/hacker_terminal"
+    },
+    "facing=west": {
+      "model": "limitlessheist:block/hacker_terminal"
+    }
+  }
+}

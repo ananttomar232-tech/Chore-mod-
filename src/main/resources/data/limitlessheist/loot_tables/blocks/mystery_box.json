@@ -1,0 +1,111 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "limitlessheist:grappling_hook_gun",
+          "weight": 12
+        },
+        {
+          "type": "minecraft:item",
+          "name": "limitlessheist:freeze_ray_gun",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "limitlessheist:crazy_apple",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "limitlessheist:hacker_usb",
+          "weight": 14,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "limitlessheist:smoke_bomb",
+          "weight": 14,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "limitlessheist:lava_suit_helmet",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "limitlessheist:lava_suit_chestplate",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "limitlessheist:lava_suit_leggings",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "limitlessheist:lava_suit_boots",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "limitlessheist:sci_fi_assault_rifle",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

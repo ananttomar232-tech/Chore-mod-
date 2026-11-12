@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "limitlessheist:item/lava_suit_boots"
+  }
+}

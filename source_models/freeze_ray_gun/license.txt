@@ -1,0 +1,11 @@
+Model Information:
+* title:	Freeze Ray Rifle Model Pixel Gun 3D
+* source:	https://sketchfab.com/3d-models/freeze-ray-rifle-model-pixel-gun-3d-da2afb2056394899bb81734c3f7e3292
+* author:	FREAXZGaming (https://sketchfab.com/freaxzgaming)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Freeze Ray Rifle Model Pixel Gun 3D" (https://sketchfab.com/3d-models/freeze-ray-rifle-model-pixel-gun-3d-da2afb2056394899bb81734c3f7e3292) by FREAXZGaming (https://sketchfab.com/freaxzgaming) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

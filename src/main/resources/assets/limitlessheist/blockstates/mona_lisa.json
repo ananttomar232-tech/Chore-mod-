@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "limitlessheist:block/mona_lisa"
+    },
+    "facing=east": {
+      "model": "limitlessheist:block/mona_lisa"
+    },
+    "facing=south": {
+      "model": "limitlessheist:block/mona_lisa"
+    },
+    "facing=west": {
+      "model": "limitlessheist:block/mona_lisa"
+    }
+  }
+}

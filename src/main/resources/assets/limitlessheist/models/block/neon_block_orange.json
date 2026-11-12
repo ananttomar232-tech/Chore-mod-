@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "limitlessheist:block/neon_block_orange"
+  }
+}

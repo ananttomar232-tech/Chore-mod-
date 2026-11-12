@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "limitlessheist:block/laser_emitter"
+    },
+    "facing=down": {
+      "model": "limitlessheist:block/laser_emitter",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "limitlessheist:block/laser_emitter",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "limitlessheist:block/laser_emitter",
+      "x": 90,
+      "y": 180
+    },
+    "facing=west": {
+      "model": "limitlessheist:block/laser_emitter",
+      "x": 90,
+      "y": 270
+    },
+    "facing=east": {
+      "model": "limitlessheist:block/laser_emitter",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

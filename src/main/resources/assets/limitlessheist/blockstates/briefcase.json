@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "limitlessheist:block/briefcase"
+    },
+    "facing=east": {
+      "model": "limitlessheist:block/briefcase"
+    },
+    "facing=south": {
+      "model": "limitlessheist:block/briefcase"
+    },
+    "facing=west": {
+      "model": "limitlessheist:block/briefcase"
+    }
+  }
+}

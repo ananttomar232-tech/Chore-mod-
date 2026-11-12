@@ -1,0 +1,15 @@
+newmtl m0
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd materiais_002.png
+
+newmtl m1
+Kd 0.4573 0.3055 0.0771
+d 1.000
+map_Kd white.png
+
+newmtl m2
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd materiais_001.png
+

@@ -1,0 +1,242 @@
+{
+ "designs": [
+  {
+   "id": "drugstore",
+   "width": 2.0,
+   "height": 2.0,
+   "color": "#ffc79a",
+   "translated_from": "薬 (medicine)"
+  },
+  {
+   "id": "vacant",
+   "width": 2.0,
+   "height": 2.0,
+   "color": "#fff1c9",
+   "translated_from": "空 (vacant / empty)"
+  },
+  {
+   "id": "tokyo",
+   "width": 1.0,
+   "height": 2.0,
+   "color": "#fff2a8",
+   "translated_from": "東京 (Tokyo)"
+  },
+  {
+   "id": "sushi",
+   "width": 1.0,
+   "height": 2.0,
+   "color": "#f4f59b",
+   "translated_from": "寿司 (sushi)"
+  },
+  {
+   "id": "tea_shop",
+   "width": 1.0,
+   "height": 2.0,
+   "color": "#e3f79a",
+   "translated_from": "茶店 (tea shop)"
+  },
+  {
+   "id": "dumplings",
+   "width": 1.0,
+   "height": 2.0,
+   "color": "#c9f59a",
+   "translated_from": "餃子 (gyoza dumplings)"
+  },
+  {
+   "id": "bbq",
+   "width": 1.0,
+   "height": 2.0,
+   "color": "#a8f5a8",
+   "translated_from": "焼肉 (grilled meat / BBQ)"
+  },
+  {
+   "id": "no_smoking",
+   "width": 1.0,
+   "height": 2.0,
+   "color": "#9cf5c0",
+   "translated_from": "禁煙 (no smoking)"
+  },
+  {
+   "id": "mahjong",
+   "width": 1.0,
+   "height": 2.0,
+   "color": "#9cf5dc",
+   "translated_from": "麻雀 (mahjong)"
+  },
+  {
+   "id": "tavern",
+   "width": 1.0,
+   "height": 4.0,
+   "color": "#8ff0f0",
+   "translated_from": "居酒屋 (izakaya / tavern)"
+  },
+  {
+   "id": "beer",
+   "width": 1.0,
+   "height": 4.0,
+   "color": "#8fe6ff",
+   "translated_from": "ビール (beer)"
+  },
+  {
+   "id": "open",
+   "width": 1.0,
+   "height": 4.0,
+   "color": "#9ad7ff",
+   "translated_from": "営業中 (open for business)"
+  },
+  {
+   "id": "hotel",
+   "width": 1.0,
+   "height": 4.0,
+   "color": "#b3d4ff",
+   "translated_from": "ホテル (hotel)"
+  },
+  {
+   "id": "made_in_japan",
+   "width": 1.0,
+   "height": 4.0,
+   "color": "#c3c3ff",
+   "translated_from": "日本製 (made in Japan)"
+  },
+  {
+   "id": "parking",
+   "width": 1.0,
+   "height": 4.0,
+   "color": "#c9b3ff",
+   "translated_from": "駐車場 (parking)"
+  },
+  {
+   "id": "pachinko",
+   "width": 1.0,
+   "height": 4.0,
+   "color": "#ddb0ff",
+   "translated_from": "パチンコ (pachinko)"
+  },
+  {
+   "id": "top_cash_paid",
+   "width": 1.0,
+   "height": 4.0,
+   "color": "#f2b0ff",
+   "translated_from": "高価買取 (we buy at high prices)"
+  },
+  {
+   "id": "karaoke",
+   "width": 1.0,
+   "height": 4.0,
+   "color": "#ffb0e6",
+   "translated_from": "カラオケ (karaoke)"
+  },
+  {
+   "id": "black_market",
+   "width": 4.0,
+   "height": 1.0,
+   "color": "#ff2bd6",
+   "translated_from": null
+  },
+  {
+   "id": "weapon_cartel",
+   "width": 4.0,
+   "height": 1.0,
+   "color": "#ff2a2a",
+   "translated_from": null
+  },
+  {
+   "id": "hackers_den",
+   "width": 4.0,
+   "height": 1.0,
+   "color": "#39ff6a",
+   "translated_from": null
+  },
+  {
+   "id": "dealers_lounge",
+   "width": 4.0,
+   "height": 1.0,
+   "color": "#ffc23a",
+   "translated_from": null
+  },
+  {
+   "id": "limitless",
+   "width": 4.0,
+   "height": 1.0,
+   "color": "#a64dff",
+   "translated_from": null
+  },
+  {
+   "id": "vip_only",
+   "width": 2.0,
+   "height": 1.0,
+   "color": "#ffd24a",
+   "translated_from": null
+  },
+  {
+   "id": "no_cops",
+   "width": 2.0,
+   "height": 1.0,
+   "color": "#ff3b3b",
+   "translated_from": null
+  },
+  {
+   "id": "cash_only",
+   "width": 2.0,
+   "height": 1.0,
+   "color": "#42ff7b",
+   "translated_from": null
+  },
+  {
+   "id": "open_24_7",
+   "width": 2.0,
+   "height": 1.0,
+   "color": "#38e8ff",
+   "translated_from": null
+  },
+  {
+   "id": "heist",
+   "width": 2.0,
+   "height": 1.0,
+   "color": "#ff304f",
+   "translated_from": null
+  },
+  {
+   "id": "this_way",
+   "width": 2.0,
+   "height": 1.0,
+   "color": "#ff5fd2",
+   "translated_from": null
+  },
+  {
+   "id": "skull",
+   "width": 2.0,
+   "height": 2.0,
+   "color": "#7dff3a",
+   "translated_from": null
+  },
+  {
+   "id": "diamond",
+   "width": 2.0,
+   "height": 2.0,
+   "color": "#3af0ff",
+   "translated_from": null
+  },
+  {
+   "id": "watching",
+   "width": 2.0,
+   "height": 2.0,
+   "color": "#ff2244",
+   "translated_from": null
+  },
+  {
+   "id": "dollar",
+   "width": 2.0,
+   "height": 2.0,
+   "color": "#3dff85",
+   "translated_from": null
+  },
+  {
+   "id": "underground",
+   "width": 1.0,
+   "height": 4.0,
+   "color": "#ff2bd6",
+   "translated_from": null
+  }
+ ]
+}

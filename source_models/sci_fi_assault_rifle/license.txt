@@ -1,0 +1,11 @@
+Model Information:
+* title:	CC-AR2 (Sci-fi rifle)
+* source:	https://sketchfab.com/3d-models/cc-ar2-sci-fi-rifle-59280a4abd184c4fbbabb513d1c4db80
+* author:	hoti28 (https://sketchfab.com/Hoti28)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "CC-AR2 (Sci-fi rifle)" (https://sketchfab.com/3d-models/cc-ar2-sci-fi-rifle-59280a4abd184c4fbbabb513d1c4db80) by hoti28 (https://sketchfab.com/Hoti28) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

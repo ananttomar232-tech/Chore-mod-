@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "limitlessheist:block/neon_strip_orange"
+    },
+    "axis=x": {
+      "model": "limitlessheist:block/neon_strip_orange",
+      "x": 90,
+      "y": 90
+    },
+    "axis=z": {
+      "model": "limitlessheist:block/neon_strip_orange",
+      "x": 90
+    }
+  }
+}

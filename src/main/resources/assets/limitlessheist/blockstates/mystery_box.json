@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "limitlessheist:block/mystery_box",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "limitlessheist:block/mystery_box",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "limitlessheist:block/mystery_box",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "limitlessheist:block/mystery_box",
+      "y": 270
+    }
+  }
+}

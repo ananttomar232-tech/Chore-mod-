@@ -1,0 +1,10 @@
+newmtl m0
+Kd 0.9500 0.7500 0.2500
+d 1.000
+map_Kd white.png
+
+newmtl m1
+Kd 0.0688 0.0688 0.0688
+d 1.000
+map_Kd team3_sanchez_briefcaseleather.png
+

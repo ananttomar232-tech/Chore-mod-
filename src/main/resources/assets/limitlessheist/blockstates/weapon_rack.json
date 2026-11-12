@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "limitlessheist:block/weapon_rack"
+    },
+    "facing=east": {
+      "model": "limitlessheist:block/weapon_rack"
+    },
+    "facing=south": {
+      "model": "limitlessheist:block/weapon_rack"
+    },
+    "facing=west": {
+      "model": "limitlessheist:block/weapon_rack"
+    }
+  }
+}

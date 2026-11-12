@@ -1,0 +1,19 @@
+newmtl m0
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd body.png
+
+newmtl m1
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd feathers.png
+
+newmtl m2
+Kd 1.0000 0.0500 0.1200
+d 1.000
+
+newmtl m3
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd horn.png
+

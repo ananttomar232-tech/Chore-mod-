@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "limitlessheist",
+  "version": "${version}",
+  "name": "LimitlessAnant's Black Market Heist",
+  "description": "8K VIP Underground Black Market, heist missions, gadgets, VIP golem bodyguards and a legendary unicorn.",
+  "authors": ["LimitlessAnant"],
+  "contact": {},
+  "license": "MIT (code) / CC-BY-4.0 (3D models, see CREDITS.md)",
+  "icon": "assets/limitlessheist/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.limitlessanant.heist.LimitlessHeist"],
+    "client": ["com.limitlessanant.heist.client.LimitlessHeistClient"]
+  },
+  "mixins": [
+    "limitlessheist.mixins.json",
+    { "config": "limitlessheist.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

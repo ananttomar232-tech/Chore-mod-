@@ -1,0 +1,10 @@
+newmtl m0
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd 02___default.png
+
+newmtl m1
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd glow.png
+

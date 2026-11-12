@@ -1,0 +1,25 @@
+newmtl m0
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd crystal.png
+
+newmtl m1
+Kd 1.0000 0.9000 1.0000
+d 1.000
+map_Kd shard.png
+
+newmtl m2
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd ring.png
+
+newmtl m3
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd ring.png
+
+newmtl m4
+Kd 1.0000 1.0000 1.0000
+d 1.000
+map_Kd shard.png
+

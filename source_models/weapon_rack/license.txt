@@ -1,0 +1,11 @@
+Model Information:
+* title:	Weapon rack
+* source:	https://sketchfab.com/3d-models/weapon-rack-391b1373d3bd4480810cc311ad1d870c
+* author:	Marc Ed (https://sketchfab.com/marc.edouard.lepine17)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Weapon rack" (https://sketchfab.com/3d-models/weapon-rack-391b1373d3bd4480810cc311ad1d870c) by Marc Ed (https://sketchfab.com/marc.edouard.lepine17) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
