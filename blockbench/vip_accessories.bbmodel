@@ -106,7 +106,7 @@
         }
       },
       "type": "cube",
-      "uuid": "0ea3eae1-85eb-4027-a7d5-3616093276ef"
+      "uuid": "e8704426-d682-48f8-84f7-cb27457d0aa7"
     },
     {
       "name": "glasses",
@@ -198,7 +198,7 @@
         }
       },
       "type": "cube",
-      "uuid": "8ada7da0-6ab6-405b-bace-01879d06e4f7"
+      "uuid": "eca5aaa2-07b4-4a5b-86f8-0206cb13e2bf"
     },
     {
       "name": "glasses",
@@ -290,7 +290,7 @@
         }
       },
       "type": "cube",
-      "uuid": "67c9059b-a0fe-44e3-b382-842115a54d68"
+      "uuid": "0edca7d8-360f-4f12-8717-4033ba150908"
     },
     {
       "name": "glasses",
@@ -382,7 +382,7 @@
         }
       },
       "type": "cube",
-      "uuid": "98c012b7-1276-4179-bdea-954ac1afe8fa"
+      "uuid": "c93b0146-df8a-4128-84b4-1380a9bcddb3"
     },
     {
       "name": "glasses",
@@ -474,7 +474,7 @@
         }
       },
       "type": "cube",
-      "uuid": "53040106-3bc6-41f9-9c00-08e7c9492808"
+      "uuid": "264497da-65e2-4da1-9ac5-1834c4183021"
     },
     {
       "name": "glasses",
@@ -566,7 +566,7 @@
         }
       },
       "type": "cube",
-      "uuid": "35272b47-d0d2-4a1e-9d4f-7e9859df06da"
+      "uuid": "147bfff0-c4e5-46d3-86e8-4eadd4e3afa7"
     },
     {
       "name": "earpiece",
@@ -658,7 +658,7 @@
         }
       },
       "type": "cube",
-      "uuid": "7a300569-4bcc-4084-9c4c-aa9b59dd93a7"
+      "uuid": "9b47ff29-df43-4e2c-8dc1-7e9f89285489"
     },
     {
       "name": "earpiece",
@@ -750,7 +750,7 @@
         }
       },
       "type": "cube",
-      "uuid": "35e9da30-096b-447d-88df-5800c53260e9"
+      "uuid": "ce200c96-9815-45a7-8783-a72a282de734"
     },
     {
       "name": "tie",
@@ -842,7 +842,7 @@
         }
       },
       "type": "cube",
-      "uuid": "f150febc-ce49-4706-a7f5-66929a4a801f"
+      "uuid": "bccc4f8d-d497-4f51-ac0b-f9f1013577d9"
     },
     {
       "name": "tie",
@@ -934,7 +934,7 @@
         }
       },
       "type": "cube",
-      "uuid": "e97397e0-bfad-44c5-8fe4-363fabd21a8d"
+      "uuid": "8148849b-4e7c-4e7b-819a-792c2f610a3c"
     },
     {
       "name": "tie",
@@ -1026,7 +1026,7 @@
         }
       },
       "type": "cube",
-      "uuid": "3682431b-6958-4131-a7dc-616b84577b6a"
+      "uuid": "d6d250de-a43d-403e-8a76-b775cf594177"
     },
     {
       "name": "tie",
@@ -1118,7 +1118,7 @@
         }
       },
       "type": "cube",
-      "uuid": "accaceae-1236-4666-906a-d6dedbfd3d89"
+      "uuid": "4bc19aad-b06e-46f7-9c25-3ae8ddbab11e"
     }
   ],
   "outliner": [
@@ -1134,17 +1134,17 @@
         0,
         0
       ],
-      "uuid": "df5da158-8d1a-4c7b-b4ed-2bb8f0debbd3",
+      "uuid": "56b97c2e-8799-459a-bcd3-a75594474b6f",
       "export": true,
       "isOpen": true,
       "visibility": true,
       "children": [
-        "0ea3eae1-85eb-4027-a7d5-3616093276ef",
-        "8ada7da0-6ab6-405b-bace-01879d06e4f7",
-        "67c9059b-a0fe-44e3-b382-842115a54d68",
-        "98c012b7-1276-4179-bdea-954ac1afe8fa",
-        "53040106-3bc6-41f9-9c00-08e7c9492808",
-        "35272b47-d0d2-4a1e-9d4f-7e9859df06da"
+        "e8704426-d682-48f8-84f7-cb27457d0aa7",
+        "eca5aaa2-07b4-4a5b-86f8-0206cb13e2bf",
+        "0edca7d8-360f-4f12-8717-4033ba150908",
+        "c93b0146-df8a-4128-84b4-1380a9bcddb3",
+        "264497da-65e2-4da1-9ac5-1834c4183021",
+        "147bfff0-c4e5-46d3-86e8-4eadd4e3afa7"
       ]
     },
     {
@@ -1159,13 +1159,13 @@
         0,
         0
       ],
-      "uuid": "878b69f2-74e4-4e58-9df0-2c9631024c48",
+      "uuid": "425b8daa-df96-41a7-a88f-339c04482e9e",
       "export": true,
       "isOpen": true,
       "visibility": true,
       "children": [
-        "7a300569-4bcc-4084-9c4c-aa9b59dd93a7",
-        "35e9da30-096b-447d-88df-5800c53260e9"
+        "9b47ff29-df43-4e2c-8dc1-7e9f89285489",
+        "ce200c96-9815-45a7-8783-a72a282de734"
       ]
     },
     {
@@ -1180,15 +1180,15 @@
         0,
         0
       ],
-      "uuid": "232d1070-4b9b-4e0b-833c-2d9dadb03a83",
+      "uuid": "dfa50313-0eaf-4aef-bebf-0a6162e8c61a",
       "export": true,
       "isOpen": true,
       "visibility": true,
       "children": [
-        "f150febc-ce49-4706-a7f5-66929a4a801f",
-        "e97397e0-bfad-44c5-8fe4-363fabd21a8d",
-        "3682431b-6958-4131-a7dc-616b84577b6a",
-        "accaceae-1236-4666-906a-d6dedbfd3d89"
+        "bccc4f8d-d497-4f51-ac0b-f9f1013577d9",
+        "8148849b-4e7c-4e7b-819a-792c2f610a3c",
+        "d6d250de-a43d-403e-8a76-b775cf594177",
+        "4bc19aad-b06e-46f7-9c25-3ae8ddbab11e"
       ]
     }
   ],
@@ -1204,7 +1204,7 @@
       "visible": true,
       "mode": "link",
       "saved": true,
-      "uuid": "9835446d-0041-41ad-a138-cdd9b76dbfbc",
+      "uuid": "c3ec3609-75b4-4193-8f17-1b439891aa11",
       "relative_path": "../src/main/resources/assets/limitlessheist/textures/entity/vip_accessories.png"
     }
   ]

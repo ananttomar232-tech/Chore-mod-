@@ -60,6 +60,7 @@ public final class ShowcaseDirector {
             return;
         }
         if (mc.player == null || mc.world == null) return;
+        mc.player.getAbilities().flying = true; // stay where we teleport the camera
         if (waitTicks > 0) {
             waitTicks--;
             return;
@@ -103,11 +104,17 @@ public final class ShowcaseDirector {
         return out.toString();
     }
 
-    private static void awaitReady(String structure) {
+    /** Sends /heist build and waits for its "is ready!" message (listener armed before the command). */
+    private static void build(String structure) {
         STEPS.add(() -> {
             lastReady = "";
+            MinecraftClient.getInstance().player.networkHandler.sendChatCommand("heist build " + structure);
             waitFor = () -> lastReady.startsWith(structure);
         });
+    }
+
+    private static void hud(boolean visible) {
+        STEPS.add(() -> MinecraftClient.getInstance().options.hudHidden = !visible);
     }
 
     private static void shot(String name) {
@@ -120,6 +127,19 @@ public final class ShowcaseDirector {
         wait(5);
     }
 
+    /** Teleport dx blocks east onto the real ground (height read from the client world once the chunk is loaded). */
+    private static void groundTp(int dx) {
+        STEPS.add(() -> MinecraftClient.getInstance().player.networkHandler.sendChatCommand("tp @s ~" + dx + " 300 ~"));
+        wait(80);
+        STEPS.add(() -> {
+            MinecraftClient mc = MinecraftClient.getInstance();
+            BlockPos p = mc.player.getBlockPos();
+            int y = mc.world.getTopY(net.minecraft.world.Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, p.getX(), p.getZ());
+            mc.player.networkHandler.sendChatCommand("tp @s " + p.getX() + " " + y + " " + p.getZ());
+        });
+        wait(20);
+    }
+
     private static void markBase() {
         STEPS.add(() -> base = MinecraftClient.getInstance().player.getBlockPos());
     }
@@ -129,7 +149,8 @@ public final class ShowcaseDirector {
         wait(100);
         cmd("time set 6000");
         cmd("weather clear");
-        cmd("gamerule sendCommandFeedback true");
+        cmd("gamerule sendCommandFeedback false");
+        hud(false);
         markBase();
 
         // ---------------- gallery in the sky (props, entities, items)
@@ -148,16 +169,16 @@ public final class ShowcaseDirector {
         rcmd("setblock {x} {y+1} {z-6} limitlessheist:briefcase[facing=south]");
         rcmd("setblock {x-3} {y} {z-6} limitlessheist:laser_emitter[facing=east]");
         rcmd("setblock {x-1} {y} {z-11} limitlessheist:mona_lisa[facing=south]");
-        rcmd("summon limitlessheist:vip_guard {x-8} {y} {z-4} {Rotation:[200f,0f],NoAI:1b}");
-        rcmd("summon minecraft:armor_stand {x+6} {y} {z-3} {Rotation:[200f,0f],ShowArms:1b,ArmorItems:[{id:\"limitlessheist:lava_suit_boots\",Count:1b},{id:\"limitlessheist:lava_suit_leggings\",Count:1b},{id:\"limitlessheist:lava_suit_chestplate\",Count:1b},{id:\"limitlessheist:lava_suit_helmet\",Count:1b}],HandItems:[{id:\"limitlessheist:freeze_ray_gun\",Count:1b},{}]}");
-        rcmd("summon minecraft:villager {x-3} {y} {z-2} {NoAI:1b,Rotation:[180f,0f]}");
+        rcmd("summon limitlessheist:vip_guard {x-8} {y} {z-4} {Rotation:[0f,0f],NoAI:1b}");
+        rcmd("summon minecraft:armor_stand {x+6} {y} {z-3} {Rotation:[0f,0f],ShowArms:1b,ArmorItems:[{id:\"limitlessheist:lava_suit_boots\",Count:1b},{id:\"limitlessheist:lava_suit_leggings\",Count:1b},{id:\"limitlessheist:lava_suit_chestplate\",Count:1b},{id:\"limitlessheist:lava_suit_helmet\",Count:1b}],HandItems:[{id:\"limitlessheist:freeze_ray_gun\",Count:1b},{}]}");
+        rcmd("summon minecraft:villager {x-3} {y} {z-2} {NoAI:1b,Rotation:[0f,0f]}");
         cmd("effect give @e[type=minecraft:villager] limitlessheist:frozen 100000 0");
         rcmd("tp @s {x} {y+3} {z+9} facing {x} {y+1} {z-8}");
         wait(80);
         shot("01_gallery_overview");
-        rcmd("tp @s {x-5} {y+3} {z+2} facing {x-8} {y+2} {z-4}");
+        rcmd("tp @s {x-8} {y+3} {z} facing {x-8} {y+2} {z-4}");
         shot("02_vip_guard");
-        rcmd("tp @s {x+6} {y+2} {z+2} facing {x+6} {y+1} {z-3}");
+        rcmd("tp @s {x+6} {y+2} {z} facing {x+6} {y+1} {z-3}");
         shot("03_lava_suit");
         rcmd("tp @s {x+5} {y+3} {z-6} facing {x+5} {y+3} {z-11}");
         shot("04_weapon_rack");
@@ -172,6 +193,7 @@ public final class ShowcaseDirector {
         rcmd("summon limitlessheist:unicorn {x} {y} {z+4} {Rotation:[90f,0f],NoAI:1b}");
         rcmd("tp @s {x+6} {y+2} {z+6} facing {x} {y+2} {z+4}");
         shot("09_unicorn_idle");
+        hud(true);
         cmd("item replace entity @s weapon.mainhand with limitlessheist:freeze_ray_gun");
         rcmd("tp @s {x} {y+1} {z} facing {x} {y+1} {z-10}");
         shot("10_first_person_freeze_ray");
@@ -180,13 +202,21 @@ public final class ShowcaseDirector {
         cmd("item replace entity @s weapon.mainhand with limitlessheist:sci_fi_assault_rifle");
         shot("12_first_person_rifle");
         cmd("item replace entity @s weapon.mainhand with minecraft:air");
+        String[] bar = {"freeze_ray_gun", "grappling_hook_gun", "sci_fi_assault_rifle", "crazy_apple", "mystery_box",
+                "infinity_dragon_core", "lava_suit_helmet", "briefcase", "mona_lisa"};
+        for (int i = 0; i < bar.length; i++) cmd("item replace entity @s hotbar." + i + " with limitlessheist:" + bar[i]);
+        cmd("item replace entity @s hotbar.0 with limitlessheist:freeze_ray_gun");
+        hud(true);
+        rcmd("tp @s {x} {y+2} {z+12} facing {x} {y+1} {z-8}");
+        shot("13_hotbar_icons");
+        cmd("clear @s");
+        hud(false);
 
         // ---------------- the black market
-        cmd("spreadplayers ~ ~ 0 1 false @s");
+        groundTp(250);
         wait(40);
         markBase();
-        cmd("heist build black_market");
-        awaitReady("black_market");
+        build("black_market");
         wait(100);
         // centre = base + (0, floor - y, -48); floorY = y - 58 (clamped by the generator to bottom + 8)
         step(() -> base = new BlockPos(base.getX(), Math.max(-56, base.getY() - 58), base.getZ() - 48));
@@ -198,9 +228,9 @@ public final class ShowcaseDirector {
         shot("21_tower_entrance");
         rcmd("tp @s {x-4} {y+2} {z+4} facing {x} {y+1} {z-6}");
         shot("22_dealers_lounge");
-        rcmd("tp @s {x} {y+11} {z+8} facing {x} {y+11} {z-14}");
+        rcmd("tp @s {x} {y+11} {z-4} facing {x} {y+12} {z-14}");
         shot("23_weapon_cartel");
-        rcmd("tp @s {x-2} {y+20} {z+4} facing {x+12} {y+19} {z-12}");
+        rcmd("tp @s {x+2} {y+20} {z-3} facing {x+12} {y+19} {z-12}");
         shot("24_hackers_den");
         rcmd("tp @s {x-12} {y+5} {z-22} facing {x-22} {y+5} {z-38}");
         wait(60);
@@ -211,11 +241,10 @@ public final class ShowcaseDirector {
         shot("27_from_the_shaft");
 
         // ---------------- missions
-        cmd("spreadplayers ~400 ~ 0 1 false @s");
+        groundTp(400);
         wait(60);
         markBase();
-        cmd("heist build museum");
-        awaitReady("museum");
+        build("museum");
         wait(60);
         rcmd("tp @s {x} {y+3} {z+14} facing {x} {y+3} {z-3}");
         wait(80);
@@ -225,34 +254,31 @@ public final class ShowcaseDirector {
         rcmd("tp @s {x+14} {y+2} {z-6} facing {x+16} {y+1} {z-8}");
         shot("32_museum_security_room");
 
-        cmd("spreadplayers ~400 ~ 0 1 false @s");
+        groundTp(400);
         wait(60);
         markBase();
-        cmd("heist build stable");
-        awaitReady("stable");
+        build("stable");
         wait(60);
         rcmd("tp @s {x+10} {y+5} {z+6} facing {x} {y+2} {z-10}");
         wait(80);
         shot("40_stable_unicorn");
-        rcmd("tp @s {x-2} {y+2} {z-22} facing {x-6} {y} {z-30}");
+        rcmd("tp @s {x-3} {y+3} {z-25} facing {x-6} {y} {z-29}");
         shot("41_gotiya_sleeping");
 
-        cmd("spreadplayers ~400 ~ 0 1 false @s");
+        groundTp(400);
         wait(60);
         markBase();
-        cmd("heist build dragon_vault");
-        awaitReady("dragon_vault");
+        build("dragon_vault");
         wait(60);
         rcmd("tp @s {x+6} {y+5} {z-6} facing {x} {y+2} {z-17}");
         wait(80);
         shot("50_dragon_vault");
 
-        cmd("spreadplayers ~400 ~ 0 1 false @s");
+        groundTp(400);
         wait(60);
         markBase();
-        cmd("heist build bunker_netherite");
-        awaitReady("bunker_netherite");
-        rcmd("tp @s {x} {y+2} {z} facing {x} {y+2} {z-14}");
+        build("bunker_netherite");
+        rcmd("tp @s {x} {y+3} {z-2} facing {x} {y+1} {z-14}");
         wait(80);
         shot("60_bunker_netherite");
         step(() -> MinecraftClient.getInstance().scheduleStop());

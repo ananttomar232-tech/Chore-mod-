@@ -106,7 +106,7 @@
         }
       },
       "type": "cube",
-      "uuid": "c3cde6f7-8d7f-4c49-9d7e-5b53acd059a9"
+      "uuid": "b5295d90-5c68-45e4-b4c1-2ded19e7f9f5"
     },
     {
       "name": "helmet_back",
@@ -198,7 +198,7 @@
         }
       },
       "type": "cube",
-      "uuid": "cbd8c99a-a120-40a3-b3f3-e6deff36687a"
+      "uuid": "9684ab81-d690-48fa-a4d0-329c9c5cacf6"
     },
     {
       "name": "ear",
@@ -290,7 +290,7 @@
         }
       },
       "type": "cube",
-      "uuid": "e49c231c-dc7d-4fde-806d-efec97252a2f"
+      "uuid": "335fc0f2-31e8-4a84-8ccd-1ee4405468e6"
     },
     {
       "name": "ear",
@@ -382,7 +382,7 @@
         }
       },
       "type": "cube",
-      "uuid": "34b41143-9dfc-49e8-b8c1-d9efbfad015c"
+      "uuid": "fb6c1815-6055-4b00-a770-ce5cb95aa9c8"
     },
     {
       "name": "antenna",
@@ -474,7 +474,7 @@
         }
       },
       "type": "cube",
-      "uuid": "0df2d858-9950-498a-b28b-81aa2f30afef"
+      "uuid": "9b89f2d4-7925-494e-a5bf-99dae20080cb"
     },
     {
       "name": "visor",
@@ -566,7 +566,7 @@
         }
       },
       "type": "cube",
-      "uuid": "8c226d73-ee56-4031-a6cb-bde2df338ef3"
+      "uuid": "378c0208-c2bc-48c1-bd4a-c794047defd6"
     },
     {
       "name": "collar",
@@ -658,7 +658,7 @@
         }
       },
       "type": "cube",
-      "uuid": "a67e98c7-2890-4fe9-bab5-472fcdc97876"
+      "uuid": "c91baf71-6bfc-412d-b17d-99dbf15f3a65"
     },
     {
       "name": "torso",
@@ -750,7 +750,7 @@
         }
       },
       "type": "cube",
-      "uuid": "7eaf76f1-0eca-4949-bf4c-a7063c89f804"
+      "uuid": "cfd64778-6797-457d-bc02-c60941510190"
     },
     {
       "name": "console",
@@ -842,7 +842,7 @@
         }
       },
       "type": "cube",
-      "uuid": "8a2e1f8f-2e4e-4742-8dfb-795fbd4ca8f7"
+      "uuid": "b1c77955-1a2a-4ceb-a096-45e577016ee7"
     },
     {
       "name": "belt",
@@ -934,7 +934,7 @@
         }
       },
       "type": "cube",
-      "uuid": "c89df599-f8c7-4a6c-bc84-b138b3aaed90"
+      "uuid": "58e318de-e86e-4e2b-8481-2f6a09b94e0d"
     },
     {
       "name": "pack",
@@ -1026,7 +1026,7 @@
         }
       },
       "type": "cube",
-      "uuid": "72be8887-3720-4bbb-b269-63d658f8cef7"
+      "uuid": "a2b308fd-2d1b-4144-bc27-3262d4ed1be4"
     },
     {
       "name": "tank",
@@ -1118,7 +1118,7 @@
         }
       },
       "type": "cube",
-      "uuid": "7221715a-ceb3-4a7d-a929-7fc02f5b6f80"
+      "uuid": "33ba3e1f-808a-459c-9df1-62de4c5d2ef0"
     },
     {
       "name": "tank",
@@ -1210,7 +1210,7 @@
         }
       },
       "type": "cube",
-      "uuid": "24aadf96-3f1b-498e-8ff1-e22614dddb6a"
+      "uuid": "72d93588-9865-4225-bf82-0a9a91965b33"
     },
     {
       "name": "fin",
@@ -1302,7 +1302,7 @@
         }
       },
       "type": "cube",
-      "uuid": "015416e3-ae8e-4a37-b2a8-6fe637570163"
+      "uuid": "65c875d1-4c78-40c6-922b-5ddc0af78c64"
     },
     {
       "name": "sleeve",
@@ -1394,7 +1394,7 @@
         }
       },
       "type": "cube",
-      "uuid": "6f9398d4-4e85-43a1-9024-3b42e2bf3431"
+      "uuid": "69c2274d-c939-40b9-b818-a9c691140a33"
     },
     {
       "name": "shoulder",
@@ -1486,7 +1486,7 @@
         }
       },
       "type": "cube",
-      "uuid": "a3fbae76-b298-4ea9-8c90-34883e6961ec"
+      "uuid": "ef224329-d05a-462a-b0e8-7b3520f4c3e6"
     },
     {
       "name": "sleeve",
@@ -1578,7 +1578,7 @@
         }
       },
       "type": "cube",
-      "uuid": "e62ee335-5463-45bb-8c20-6c66445ef2e3"
+      "uuid": "368293c7-145b-42d4-98ba-9494dfbdbba9"
     },
     {
       "name": "shoulder",
@@ -1670,7 +1670,7 @@
         }
       },
       "type": "cube",
-      "uuid": "d99f794d-be02-4114-8be6-4be1df25fa78"
+      "uuid": "89951580-bdbb-4472-8e1e-e4f784a83629"
     },
     {
       "name": "pants",
@@ -1762,7 +1762,7 @@
         }
       },
       "type": "cube",
-      "uuid": "14d47091-94c7-4a0d-943d-81935061dc65"
+      "uuid": "da2ba8a4-afd2-4831-8e28-2804496c998c"
     },
     {
       "name": "boot",
@@ -1854,7 +1854,7 @@
         }
       },
       "type": "cube",
-      "uuid": "59f34d35-60b2-4df3-b8ae-59dd44148ab9"
+      "uuid": "02d488f5-7c30-4b88-890d-cd741cd1a0db"
     },
     {
       "name": "pants",
@@ -1946,7 +1946,7 @@
         }
       },
       "type": "cube",
-      "uuid": "ed1243bd-50b1-4ca0-ba30-ff2e258f562d"
+      "uuid": "47a93c4b-8368-470d-89e7-c7fc4cd2e795"
     },
     {
       "name": "boot",
@@ -2038,7 +2038,7 @@
         }
       },
       "type": "cube",
-      "uuid": "1819a956-f702-44af-a51a-ab44d7cfe0b0"
+      "uuid": "2f599241-fb8f-4c44-bdb2-d10b7e69fa0e"
     }
   ],
   "outliner": [
@@ -2054,18 +2054,18 @@
         0,
         0
       ],
-      "uuid": "6182d0c1-ec7f-4631-8bf6-b865d6bdb65d",
+      "uuid": "1dcdd16a-9492-4556-bab8-921b8ad63eca",
       "export": true,
       "isOpen": true,
       "visibility": true,
       "children": [
-        "c3cde6f7-8d7f-4c49-9d7e-5b53acd059a9",
-        "cbd8c99a-a120-40a3-b3f3-e6deff36687a",
-        "e49c231c-dc7d-4fde-806d-efec97252a2f",
-        "34b41143-9dfc-49e8-b8c1-d9efbfad015c",
-        "0df2d858-9950-498a-b28b-81aa2f30afef",
-        "8c226d73-ee56-4031-a6cb-bde2df338ef3",
-        "a67e98c7-2890-4fe9-bab5-472fcdc97876"
+        "b5295d90-5c68-45e4-b4c1-2ded19e7f9f5",
+        "9684ab81-d690-48fa-a4d0-329c9c5cacf6",
+        "335fc0f2-31e8-4a84-8ccd-1ee4405468e6",
+        "fb6c1815-6055-4b00-a770-ce5cb95aa9c8",
+        "9b89f2d4-7925-494e-a5bf-99dae20080cb",
+        "378c0208-c2bc-48c1-bd4a-c794047defd6",
+        "c91baf71-6bfc-412d-b17d-99dbf15f3a65"
       ]
     },
     {
@@ -2080,18 +2080,18 @@
         0,
         0
       ],
-      "uuid": "620146c1-33ca-4ae4-ab9d-77acc9c158a0",
+      "uuid": "74506008-a2a0-4ef7-9113-764331d587e1",
       "export": true,
       "isOpen": true,
       "visibility": true,
       "children": [
-        "7eaf76f1-0eca-4949-bf4c-a7063c89f804",
-        "8a2e1f8f-2e4e-4742-8dfb-795fbd4ca8f7",
-        "c89df599-f8c7-4a6c-bc84-b138b3aaed90",
-        "72be8887-3720-4bbb-b269-63d658f8cef7",
-        "7221715a-ceb3-4a7d-a929-7fc02f5b6f80",
-        "24aadf96-3f1b-498e-8ff1-e22614dddb6a",
-        "015416e3-ae8e-4a37-b2a8-6fe637570163"
+        "cfd64778-6797-457d-bc02-c60941510190",
+        "b1c77955-1a2a-4ceb-a096-45e577016ee7",
+        "58e318de-e86e-4e2b-8481-2f6a09b94e0d",
+        "a2b308fd-2d1b-4144-bc27-3262d4ed1be4",
+        "33ba3e1f-808a-459c-9df1-62de4c5d2ef0",
+        "72d93588-9865-4225-bf82-0a9a91965b33",
+        "65c875d1-4c78-40c6-922b-5ddc0af78c64"
       ]
     },
     {
@@ -2106,13 +2106,13 @@
         0,
         0
       ],
-      "uuid": "0c70bff1-2d9d-4fb5-9683-83fd7352f09e",
+      "uuid": "af95772b-2070-4feb-b1b7-8cfcb935d45b",
       "export": true,
       "isOpen": true,
       "visibility": true,
       "children": [
-        "6f9398d4-4e85-43a1-9024-3b42e2bf3431",
-        "a3fbae76-b298-4ea9-8c90-34883e6961ec"
+        "69c2274d-c939-40b9-b818-a9c691140a33",
+        "ef224329-d05a-462a-b0e8-7b3520f4c3e6"
       ]
     },
     {
@@ -2127,13 +2127,13 @@
         0,
         0
       ],
-      "uuid": "d652c93b-db30-4f1d-820f-3da69b4351e1",
+      "uuid": "3a5004ea-72b9-44f2-9202-de72dd4e78e7",
       "export": true,
       "isOpen": true,
       "visibility": true,
       "children": [
-        "e62ee335-5463-45bb-8c20-6c66445ef2e3",
-        "d99f794d-be02-4114-8be6-4be1df25fa78"
+        "368293c7-145b-42d4-98ba-9494dfbdbba9",
+        "89951580-bdbb-4472-8e1e-e4f784a83629"
       ]
     },
     {
@@ -2148,13 +2148,13 @@
         0,
         0
       ],
-      "uuid": "22ba83db-b1d1-4a30-adf4-157116b3ab07",
+      "uuid": "33e2b4fa-e8b5-4824-be96-578fca96d7d2",
       "export": true,
       "isOpen": true,
       "visibility": true,
       "children": [
-        "14d47091-94c7-4a0d-943d-81935061dc65",
-        "59f34d35-60b2-4df3-b8ae-59dd44148ab9"
+        "da2ba8a4-afd2-4831-8e28-2804496c998c",
+        "02d488f5-7c30-4b88-890d-cd741cd1a0db"
       ]
     },
     {
@@ -2169,13 +2169,13 @@
         0,
         0
       ],
-      "uuid": "02234d9b-46a9-4968-9a9a-aac1f53a48ca",
+      "uuid": "299638ed-e689-43fb-b79a-926658e38ad6",
       "export": true,
       "isOpen": true,
       "visibility": true,
       "children": [
-        "ed1243bd-50b1-4ca0-ba30-ff2e258f562d",
-        "1819a956-f702-44af-a51a-ab44d7cfe0b0"
+        "47a93c4b-8368-470d-89e7-c7fc4cd2e795",
+        "2f599241-fb8f-4c44-bdb2-d10b7e69fa0e"
       ]
     }
   ],
@@ -2191,7 +2191,7 @@
       "visible": true,
       "mode": "link",
       "saved": true,
-      "uuid": "7fd1aa5c-1482-433b-b8d8-cd94ce1825c8",
+      "uuid": "53e32315-4a3a-4563-932e-538da46e8f1d",
       "relative_path": "../src/main/resources/assets/limitlessheist/textures/models/armor/lava_suit.png"
     }
   ]

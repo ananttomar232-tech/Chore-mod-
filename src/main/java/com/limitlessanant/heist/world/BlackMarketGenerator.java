@@ -154,7 +154,7 @@ public final class BlackMarketGenerator {
         int a = T_HALF, top = FLOORS * FLOOR_H;
         BlockState frame = Blocks.BLACK_CONCRETE.getDefaultState();
         BlockState slab = Blocks.POLISHED_BLACKSTONE.getDefaultState();
-        BlockState glass = Blocks.GLASS.getDefaultState();
+        BlockState glass = Blocks.GRAY_STAINED_GLASS.getDefaultState(); // smoky "pristine" glass, no white frame grid
         BlockState band = Blocks.BLACK_STAINED_GLASS.getDefaultState();
         BlockState gold = Blocks.GOLD_BLOCK.getDefaultState();
         // lobby floor: white marble with gold inlay
@@ -172,7 +172,8 @@ public final class BlackMarketGenerator {
         // floor slabs with gold edge + neon strip outside
         for (int f = 1; f <= FLOORS; f++) {
             int y = f * FLOOR_H - 1;
-            c.fill(-a, y, -a, a, y, a, (x, yy, z) -> (Math.abs(x) == a || Math.abs(z) == a) ? gold : slab);
+            c.fill(-a, y, -a, a, y, a, (x, yy, z) -> (Math.abs(x) == a || Math.abs(z) == a) ? gold
+                    : (Math.floorMod(x, 4) == 2 && Math.floorMod(z, 4) == 2) ? Blocks.SEA_LANTERN.getDefaultState() : slab); // lit ceilings
             DyeColor col = f % 2 == 0 ? DyeColor.CYAN : DyeColor.MAGENTA;
             if (f < FLOORS) {
                 c.neonStrip(-a, y, -a - 1, a, y, -a - 1, col);

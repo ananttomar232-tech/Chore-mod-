@@ -54,8 +54,8 @@ GUN = {  # mesh guns: barrel along -Z in the model = forward in first person
     "fixed": {"rotation": [0, 90, 0], "translation": [0, 0, 0], "scale": [1, 1, 1]},
     "thirdperson_righthand": {"rotation": [0, 0, 0], "translation": [0, 3.5, -2], "scale": [0.8, 0.8, 0.8]},
     "thirdperson_lefthand": {"rotation": [0, 0, 0], "translation": [0, 3.5, -2], "scale": [0.8, 0.8, 0.8]},
-    "firstperson_righthand": {"rotation": [0, 0, 0], "translation": [1, 3, -4], "scale": [0.9, 0.9, 0.9]},
-    "firstperson_lefthand": {"rotation": [0, 0, 0], "translation": [1, 3, -4], "scale": [0.9, 0.9, 0.9]},
+    "firstperson_righthand": {"rotation": [0, 0, 0], "translation": [1.5, 3, -2], "scale": [0.55, 0.55, 0.55]},
+    "firstperson_lefthand": {"rotation": [0, 0, 0], "translation": [1.5, 3, -2], "scale": [0.55, 0.55, 0.55]},
 }
 CORE = {
     "gui": {"rotation": [20, 30, 0], "translation": [0, 0, 0], "scale": [0.8, 0.8, 0.8]},
@@ -160,10 +160,10 @@ def grappling_gun_model():
         el("hook_tip", [7.25, 7.65, -4.5], [8.75, 9.15, -3], brass),
     ]
     disp = {
-        "thirdperson_righthand": {"rotation": [0, 180, 0], "translation": [0, 3, 1], "scale": [0.85, 0.85, 0.85]},
-        "thirdperson_lefthand": {"rotation": [0, 180, 0], "translation": [0, 3, 1], "scale": [0.85, 0.85, 0.85]},
-        "firstperson_righthand": {"rotation": [0, 180, 0], "translation": [2, 2, -1], "scale": [0.9, 0.9, 0.9]},
-        "firstperson_lefthand": {"rotation": [0, 180, 0], "translation": [2, 2, -1], "scale": [0.9, 0.9, 0.9]},
+        "thirdperson_righthand": {"rotation": [0, 0, 0], "translation": [0, 2.5, -1], "scale": [0.7, 0.7, 0.7]},
+        "thirdperson_lefthand": {"rotation": [0, 0, 0], "translation": [0, 2.5, -1], "scale": [0.7, 0.7, 0.7]},
+        "firstperson_righthand": {"rotation": [0, 0, 0], "translation": [1.5, 2.5, -1], "scale": [0.5, 0.5, 0.5]},
+        "firstperson_lefthand": {"rotation": [0, 0, 0], "translation": [1.5, 2.5, -1], "scale": [0.5, 0.5, 0.5]},
         "gui": {"rotation": [20, 115, 0], "translation": [0, 0, 0], "scale": [0.85, 0.85, 0.85]},
         "ground": {"rotation": [0, 0, 0], "translation": [0, 2, 0], "scale": [0.5, 0.5, 0.5]},
         "fixed": {"rotation": [0, 90, 0], "translation": [0, 0, 0], "scale": [1, 1, 1]},

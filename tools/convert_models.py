@@ -190,10 +190,10 @@ def conv_briefcase():
         fit(prims, rot_y=90, width=0.9)
     # Black-market look: dark carbon leather, gold locks
     leather = Image.open(os.path.join(SRC, "briefcase/textures/Team3_Sanchez_BriefcaseLeather_diffuse.jpeg")).convert("RGB")
-    leather = ImageOps.colorize(ImageOps.grayscale(leather), black=(8, 8, 10), white=(95, 92, 100))
+    leather = ImageOps.colorize(ImageOps.grayscale(leather), black=(24, 23, 27), white=(150, 145, 155))
     groups, prev = simple_model(mid, prims,
                                 tex_override={"Team3_Sanchez_BriefcaseLeather": leather},
-                                color_override={"Team3_Sanchez_BriefcaseLocks": [0.95, 0.75, 0.25, 1.0]},
+                                color_override={"Team3_Sanchez_BriefcaseLocks": [0.95, 0.75, 0.25, 1.0], "Team3_Sanchez_BriefcaseLeather": [1, 1, 1, 1]},
                                 budget=5000)
     emit(mid, [("root", -1, (0, 0, 0))], groups, prev)
 
@@ -231,7 +231,7 @@ def conv_rifle():
     mid = "assault_rifle"
     prims, edited = edited_or_gltf(mid, os.path.join(SRC, "sci_fi_assault_rifle/scene.gltf"))
     if not edited:
-        fit(prims, rot_y=0, length=1.25, anchor="center")
+        fit(prims, rot_y=180, length=1.25, anchor="center")  # barrel -> -Z
     groups, prev = simple_model(mid, prims, max_tex=1024, budget=6000)
     emit(mid, [("root", -1, (0, 0, 0))], groups, prev)
 

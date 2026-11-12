@@ -50,7 +50,14 @@ public final class StructureBuilder {
 
     public static void enqueue(ServerWorld world, List<Op> ops, ServerCommandSource source, String name) {
         JOBS.add(new Job(world, ops, source, name));
-        if (source != null) source.sendFeedback(() -> Text.literal("Building " + name + " (" + ops.size() + " steps)...").formatted(Formatting.LIGHT_PURPLE), false);
+        tell(source, Text.literal("Building " + name + " (" + ops.size() + " steps)...").formatted(Formatting.LIGHT_PURPLE));
+    }
+
+    /** Messages the player directly (not affected by the sendCommandFeedback gamerule). */
+    private static void tell(ServerCommandSource source, Text msg) {
+        if (source == null) return;
+        if (source.getPlayer() != null) source.getPlayer().sendMessage(msg, false);
+        else source.sendFeedback(() -> msg, false);
     }
 
     public static void init() {
@@ -77,11 +84,11 @@ public final class StructureBuilder {
             int pct = (int) Math.min(100, job.done * 100 / job.total);
             if (job.source != null && pct / 10 != job.lastPct / 10 && job.index < job.ops.size()) {
                 job.lastPct = pct;
-                job.source.sendFeedback(() -> Text.literal(job.name + ": " + pct + "%").formatted(Formatting.DARK_PURPLE), false);
+                tell(job.source, Text.literal(job.name + ": " + pct + "%").formatted(Formatting.DARK_PURPLE));
             }
             if (job.index >= job.ops.size()) {
                 JOBS.poll();
-                if (job.source != null) job.source.sendFeedback(() -> Text.literal(job.name + " is ready!").formatted(Formatting.GOLD, Formatting.BOLD), false);
+                tell(job.source, Text.literal(job.name + " is ready!").formatted(Formatting.GOLD, Formatting.BOLD));
             }
         });
     }
