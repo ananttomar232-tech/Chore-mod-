@@ -153,6 +153,8 @@ public final class ShowcaseDirector {
         hud(false);
         markBase();
 
+        boolean missionsOnly = "missions".equals(System.getProperty("limitlessheist.showcase.only"));
+        if (!missionsOnly) {
         // ---------------- gallery in the sky (props, entities, items)
         cmd("tp @s ~ 200 ~");
         wait(20);
@@ -240,6 +242,7 @@ public final class ShowcaseDirector {
         rcmd("tp @s {x} {y+2} {z+44} facing {x} {y+6} {z}");
         shot("27_from_the_shaft");
 
+        }
         // ---------------- missions
         groundTp(400);
         wait(60);

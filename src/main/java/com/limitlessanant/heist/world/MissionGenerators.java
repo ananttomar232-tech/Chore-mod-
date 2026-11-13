@@ -26,7 +26,8 @@ import net.minecraft.util.math.Direction;
 public final class MissionGenerators {
 
     private static void clearBox(Canvas c, int x1, int y1, int z1, int x2, int y2, int z2, BlockState ground) {
-        c.fill(x1, y1, z1, x2, y2, z2, Blocks.AIR.getDefaultState());
+        // clear up to 30 blocks above the roof too, so a hillside never buries the build and daylight gets in
+        c.fill(x1, y1, z1, x2, y2 + 30, z2, Blocks.AIR.getDefaultState());
         c.fill(x1, y1 - 3, z1, x2, y1 - 2, z2, Blocks.STONE.getDefaultState());
         c.fill(x1, y1 - 1, z1, x2, y1 - 1, z2, ground);
     }
@@ -52,7 +53,11 @@ public final class MissionGenerators {
         }
         // glass roof with a marble grid + ceiling lights
         c.fill(-X, top, Z1, X, top, Z2, (x, y, z) -> (x % 5 == 0 || z % 6 == 0) ? Blocks.QUARTZ_BRICKS.getDefaultState() : Blocks.GLASS.getDefaultState());
-        c.fill(-X, top - 1, Z1, X, top - 1, Z2, (x, y, z) -> (x % 10 == 5 && z % 6 == 3) ? Blocks.SEA_LANTERN.getDefaultState() : null);
+        c.fill(-X, top - 1, Z1, X, top - 1, Z2, (x, y, z) -> (Math.floorMod(x, 5) == 2 && Math.floorMod(z, 6) == 3) ? Blocks.SEA_LANTERN.getDefaultState() : null);
+        for (int z = Z1 + 3; z <= Z2 - 3; z += 6) { // gallery wall lights
+            c.set(-X + 1, 5, z, Blocks.SEA_LANTERN.getDefaultState());
+            c.set(X - 1, 5, z, Blocks.SEA_LANTERN.getDefaultState());
+        }
         // entrance
         c.fill(-2, 0, Z2, 2, 5, Z2, Blocks.AIR.getDefaultState());
         c.fill(-3, 6, Z2, 3, 6, Z2, Blocks.CHISELED_QUARTZ_BLOCK.getDefaultState());
@@ -150,7 +155,9 @@ public final class MissionGenerators {
         c.fill(4, 0, z1 + 1, 8, 1, z1 + 3, Blocks.HAY_BLOCK.getDefaultState());
         c.set(8, 2, z1 + 1, Blocks.HAY_BLOCK.getDefaultState());
         c.set(0, 0, z1 + 1, Blocks.CRAFTING_TABLE.getDefaultState());
-        for (int x = -6; x <= 6; x += 6) c.set(x, 5, (z1 + z2) / 2, Blocks.LANTERN.getDefaultState().with(LanternBlock.HANGING, true));
+        for (int x = -6; x <= 6; x += 6) {
+            for (int z = z1 + 3; z <= z2 - 3; z += 4) c.set(x, 5, z, Blocks.LANTERN.getDefaultState().with(LanternBlock.HANGING, true));
+        }
         c.neonWall(0, 4, z2 + 1, Direction.SOUTH, "hotel", 0.5f); // Gotiya's "hotel" (he never wakes up)
         c.set(10, 0, -16, ModBlocks.MYSTERY_BOX.getDefaultState());
         return c;

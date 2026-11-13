@@ -41,7 +41,7 @@ public class LavaSuitArmorRenderer implements ArmorRenderer {
         if (slot == EquipmentSlot.HEAD) { // the red glass dome
             model.helmetShell.visible = model.collar.visible = false;
             model.visor.visible = true;
-            model.head.render(ms, vcp.getBuffer(RenderLayer.getEntityTranslucent(TEXTURE)), light, OverlayTexture.DEFAULT_UV, 1f, 0.55f, 0.5f, 0.62f);
+            model.head.render(ms, vcp.getBuffer(RenderLayer.getEntityTranslucent(TEXTURE)), light, OverlayTexture.DEFAULT_UV, 1f, 0.6f, 0.55f, 0.85f);
         }
     }
 }

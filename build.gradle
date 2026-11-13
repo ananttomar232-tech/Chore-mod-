@@ -17,6 +17,7 @@ loom {
         client {
             // HEIST_SHOWCASE=true ./gradlew runClient  -> automated screenshot tour (client/dev/ShowcaseDirector)
             property("limitlessheist.showcase", System.getenv("HEIST_SHOWCASE") ?: "false")
+            property("limitlessheist.showcase.only", System.getenv("HEIST_SHOWCASE_ONLY") ?: "all")
         }
     }
     mods {

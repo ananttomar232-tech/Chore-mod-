@@ -10,6 +10,16 @@ An **8K VIP Underground Black Market** heist mod for a cinematic thief video. Yo
 | Needs | Fabric API (built with 0.92.6+1.20.1) |
 | Works with | Iris/Sodium shaders. Everything renders through vanilla render layers, and the emissive parts glow under shaders. |
 
+### Screenshots (real Minecraft 1.20.1, taken by the automated showcase)
+
+| Black Market (cavern, VIP tower, lounge, cartel, hacker den, shops) | Props, gadgets, VIP guard, lava suit, first-person guns |
+|---|---|
+| ![market](docs/preview_black_market.png) | ![gallery](docs/preview_gallery.png) |
+| **Missions** (museum lasers, security room, Gotiya, dragon vault, bunker) | **Unicorn rig** (idle rearing / gallop / gallop / flight) |
+| ![missions](docs/preview_missions.png) | ![unicorn](docs/preview_unicorn_poses.png) |
+
+Neon set (translated + new): ![neon](docs/neon_signs.png)
+
 ---
 
 ## 1. Install & play (2 minutes)
@@ -270,7 +280,9 @@ Open `blockbench/vip_accessories.bbmodel` or `blockbench/lava_suit.bbmodel` (**M
 * For a clean intro shot, run `/heist build black_market`, then fly in through the shaft.
 * Freeze-ray guards in Mission 3 first (they become ice statues for 10 s), then grab the core.
 * Developer screenshot tour: `HEIST_SHOWCASE=true ./gradlew runClient` creates a world, builds everything and saves
-  shots in `run/screenshots/`. It is a good starting point for planning camera angles.
+  shots in `run/screenshots/` (`HEIST_SHOWCASE_ONLY=missions` for just the missions). It is a good starting point
+  for planning camera angles. Build missions on fairly flat ground; the generators clear 30 blocks of sky above
+  themselves, but they don't level hillsides around them.
 
 ## Credits
 See **[CREDITS.md](CREDITS.md)**. All 8 provided models are CC-BY-4.0, so **put the credit block in your video description**.

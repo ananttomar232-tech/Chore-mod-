@@ -47,8 +47,9 @@ def noisy(img, box, base, amount=10, seed=0):
 def box_faces(u, v, w, h, d):
     """Minecraft box-UV rectangles (x0,y0,x1,y1) for a cuboid of size w,h,d with texture offset u,v."""
     return {
-        "down": (u + d, v, u + d + w, v + d),
-        "up": (u + d + w, v, u + d + 2 * w, v + d),
+        # model space is y-DOWN, so Minecraft's DOWN quad (u+d, v) is the face you see on TOP
+        "up": (u + d, v, u + d + w, v + d),
+        "down": (u + d + w, v, u + d + 2 * w, v + d),
         "west": (u, v + d, u + d, v + d + h),
         "north": (u + d, v + d, u + d + w, v + d + h),  # front
         "east": (u + d + w, v + d, u + 2 * d + w, v + d + h),
